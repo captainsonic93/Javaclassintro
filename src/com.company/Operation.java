@@ -32,7 +32,7 @@ public class Operation {
             return a+b+c;
         }
         public String message(String a){
-            String mesg = "what ever you want to say to the person using your class";
+            String mesg = "you will die in 7 days";
                     return a + mesg;
         }
 
