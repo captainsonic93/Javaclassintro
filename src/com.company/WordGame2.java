@@ -1,6 +1,9 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.Random;
 
 public class WordGame2 {
 
@@ -37,10 +40,25 @@ public class WordGame2 {
         String secretWord2 = new Scanner(System.in).next();
         System.out.println("The Secret Word just lost its letters " +
                 "The word needs help getting all of its constants and vowels");
-        System.out.println("Will you help ? enter yes or no ");
+        System.out.println("Will you help? enter yes or no ");
         String willHelp = new Scanner(System.in).next();
 
-        String secretWord = ("god");
+        String secretWord = "Slang";
+
+
+       /** List<char> list = new ArrayList<>();
+        list.add("hello");
+        list.add("face");
+        list.add("race");
+        list.add(restart);
+        list.add(work);
+
+
+
+
+        */
+
+        secretWord.toLowerCase();
         /**switch (secretWord2.length()){
             case 1:{
                 secretWord = "pie";
@@ -162,42 +180,7 @@ public class WordGame2 {
 
 
     }
-    /**static void playGame(String secretWord) {
-        System.out.println("Enter Secret Word - Dont let anyone Know");
-        String secretWord2 = new Scanner(System.in).next();
-        System.out.println("The Secret Word just lost its letters " +
-                "The word needs help getting all of its constants and vowels");
-        System.out.println("Will you help ? enter yes or no ");
-        String willHelp = new Scanner(System.in).next();
-        secretWord = ("aprilfools");
 
-        System.out.println("playing");
-        Integer numberOfGuesses = secretWord.length() + secretWord2.length();
-        System.out.println("you have : " + numberOfGuesses + " guesses");
-        int correct = 0;
-        int guess = 0;
-        while (guess < numberOfGuesses) {
-            System.out.println("Guessing enter a letter");
-            String guessedChar = new Scanner(System.in).next();
-            if (secretWord.contains(guessedChar)) {
-                System.out.println(" B You Guessed It ");
-                correct++;
-            }
-
-            guess++;
-        }
-        System.out.println("You have guessed : " + correct);
-        if (correct == numberOfGuesses) {
-            System.out.println("You Win. Try with a much bigger Word Next time");
-        }
-        if (willHelp.toLowerCase().equals("no")) {
-            System.out.println("Really?---You Died");
-
-            System.out.println("Game Over");
-            restartGame();
-
-
-       */
 
 }
     }
