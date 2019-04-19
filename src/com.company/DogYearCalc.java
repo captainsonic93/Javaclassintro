@@ -16,6 +16,7 @@ public class DogYearCalc {
             case "no": {
                 System.out.println("");
                 System.out.println("Thank You!");
+                System.out.println("have a great day");
             }
         }
     }
@@ -96,6 +97,7 @@ public class DogYearCalc {
 
 
 }
+
 }
     /**public static void CheckDog(String dogname, int age, int weight){
         int dogAIHY = DogYearCalc(age, weight);
@@ -104,4 +106,5 @@ public class DogYearCalc {
         return 0;
 
     }
+
 }*/
