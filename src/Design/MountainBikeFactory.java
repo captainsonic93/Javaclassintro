@@ -11,4 +11,9 @@ public class MountainBikeFactory extends AbstractBikeFactory {
     BikeSeatInterface createSeat() {
         return new MountainSeat();
     }
+
+    @Override
+    BikePaintInterface getPaintforBike() {
+        return new MountainColor();
+    }
 }

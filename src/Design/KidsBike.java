@@ -1,18 +1,19 @@
 package Design;
 
-public class RoadBikeFactory extends AbstractBikeFactory {
+public class KidsBike extends AbstractBikeFactory{
     @Override
     BikeFrameInterface createFrame() {
-        return new RoadBikeFrame();
+        return new KidsFrame();
     }
 
     @Override
     BikeSeatInterface createSeat() {
-        return new RoadBikeSeat();
+        return new KidsSeat();
     }
 
     @Override
     BikePaintInterface getPaintforBike() {
-        return new RoadColor();
+        return new KidsColor();
     }
 }
+
