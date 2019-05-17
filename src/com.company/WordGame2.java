@@ -35,6 +35,7 @@ public class WordGame2 {
 
     }
 
+
     static void playGame() {
         System.out.println("Enter Secret Word - Dont let anyone Know");
         String secretWord2 = new Scanner(System.in).next();
@@ -43,20 +44,22 @@ public class WordGame2 {
         System.out.println("Will you help? enter yes or no ");
         String willHelp = new Scanner(System.in).next();
 
-        String secretWord = "Slang";
-
-
-       /** List<char> list = new ArrayList<>();
-        list.add("hello");
-        list.add("face");
-        list.add("race");
-        list.add(restart);
-        list.add(work);
 
 
 
+       ArrayList<String> wordList = new ArrayList<>();
+       String a = ("Hello");
+        wordList.add(a);
+        wordList.add("face");
+        wordList.add("race");
+        wordList.add("restart");
+        wordList.add("work");
 
-        */
+
+
+
+
+        String secretWord = "good";
 
         secretWord.toLowerCase();
         /**switch (secretWord2.length()){
@@ -140,6 +143,8 @@ public class WordGame2 {
                 }
             }
 
+
+
         }
        /** if (correct >= secretWord.length())
                 System.out.println("Congrats you have beaten me this time");
@@ -184,4 +189,5 @@ public class WordGame2 {
 
 }
     }
+
 }
